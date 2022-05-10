@@ -1,7 +1,11 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
+  // ! TIP 配置坑，默认从根目录开始找文件，如果不配置，就默认从硬盘分区根目录下开始找了
+  publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
+
   transpileDependencies: true,
   lintOnSave: false,
+
   devServer: {
     proxy: {
       "/api": {

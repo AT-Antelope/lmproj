@@ -219,7 +219,7 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background: url(../../assets/Desert1.jpg) no-repeat 0px 0px;
+  background: require("../../static/Desert1.jpg") no-repeat 0px 0px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -258,7 +258,7 @@ body {
     left: -70px;
     font-size: 18px;
     top: 30px;
-  } 
+  }
 }
 label {
   width: 30px;
