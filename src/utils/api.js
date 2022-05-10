@@ -42,9 +42,6 @@ export function GetAwardList() {
   return service.request({
     method: "get",
     url: `/award/list`,
-    cancelToken: new axios.CancelToken((c) => {
-      console.log(c);
-    }),
   });
 }
 
