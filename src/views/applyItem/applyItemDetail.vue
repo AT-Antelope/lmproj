@@ -118,12 +118,12 @@
 </template>
 
 <script>
-import { onMounted, reactive, ref } from "vue";
+import { defineComponent, onMounted, reactive, ref } from "vue";
 import { useRouter } from "vue-router";
 // 获取模拟json数据
 // import { notApplyItemJson } from "../../static/json/json.js";
 import { GetAwardList, StuApplyAward } from "../../utils/api.js";
-export default {
+export default defineComponent({
   // 审评列表
   name: "applyItemDetail",
   setup() {
@@ -283,7 +283,7 @@ export default {
       eveGotoItemDetail,
     };
   },
-};
+});
 </script>
 
 <style lang="scss" scoped>

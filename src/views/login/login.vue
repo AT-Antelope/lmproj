@@ -92,10 +92,10 @@
 /**
  * ! TODO 暂未使用 TOKEN 和 路由守卫，无法防止直接通过url跳过登录
  */
-import { onMounted, reactive } from "vue";
+import { defineComponent, onMounted, reactive } from "vue";
 import { useRouter } from "vue-router";
 import { Login } from "../../utils/api";
-export default {
+export default defineComponent({
   name: "login",
   setup(props, { root }) {
     // tips: 必须提前声明，否则useRouter()为undefined，无法获取到useRouter().push()
@@ -203,7 +203,7 @@ export default {
       btnLogin,
     };
   },
-};
+});
 </script>
 
 <style lang="scss" scoped>
